@@ -51,25 +51,8 @@ call plug#begin('~/.vim/plugged')
 
 " plugin on GitHub repo
 Plug 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plug 'L9'
 " Git plugin not hosted on GitHub
 Plug 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-" Plug 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plug 'ascenator/L9', {'name': 'newL9'}
-
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-let g:airline_theme = 'dracula'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#branch#enabled=1
-let g:airline#extensions#tabline#tab_nr_type = 1 " tab number
 
 Plug 'vim-ruby/vim-ruby'
 let ruby_operators = 1
@@ -103,6 +86,7 @@ source ~/.config/nvim/plug/nerdtree.vim
 source ~/.config/nvim/plug/fzf.vim
 source ~/.config/nvim/plug/vim-rspec.vim
 source ~/.config/nvim/plug/coc.vim
+source ~/.config/nvim/plug/vim-airline.vim
 call plug#end()
 
 set smartcase
