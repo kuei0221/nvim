@@ -82,7 +82,9 @@ let g:ale_ruby_rubocop_executable = 'bin/rubocop'
 
 Plug 'Yggdroot/indentLine'
 
-source ~/.config/nvim/plug/nerdtree.vim
+Plug 'nvim-tree/nvim-web-devicons' " optional
+Plug 'nvim-tree/nvim-tree.lua'
+" source ~/.config/nvim/plug/nerdtree.vim
 source ~/.config/nvim/plug/fzf.vim
 source ~/.config/nvim/plug/vim-rspec.vim
 source ~/.config/nvim/plug/coc.vim
