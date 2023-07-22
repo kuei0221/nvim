@@ -14,3 +14,5 @@ vim.cmd([[
 ]])
 
 -- vim.cmd([[nnoremap \ :Neotree reveal<cr>]])
+--
+vim.api.nvim_set_keymap('n', '<leader>gg', ':LazyGit<CR>', { noremap = true, silent = true })
