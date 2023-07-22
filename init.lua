@@ -6,6 +6,7 @@ require('plugins')
 require('neo_tree_config')
 require('indent_blankline_config')
 require('nvim_treesitter_config')
+require('noice_config')
 
 vim.cmd([[
   augroup packer_user_config
