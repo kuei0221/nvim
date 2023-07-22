@@ -52,7 +52,7 @@ call plug#begin('~/.vim/plugged')
 " plugin on GitHub repo
 Plug 'tpope/vim-fugitive'
 " Git plugin not hosted on GitHub
-Plug 'git://git.wincent.com/command-t.git'
+" Plug 'git://git.wincent.com/command-t.git'
 
 Plug 'vim-ruby/vim-ruby'
 let ruby_operators = 1
@@ -79,12 +79,6 @@ let g:ale_fixers = {'ruby': ['rubocop']}
 let g:ale_fix_on_save = 1
 let g:ale_ruby_rubocop_executable = 'bin/rubocop'
 
-
-Plug 'Yggdroot/indentLine'
-
-Plug 'nvim-tree/nvim-web-devicons' " optional
-Plug 'nvim-tree/nvim-tree.lua'
-" source ~/.config/nvim/plug/nerdtree.vim
 source ~/.config/nvim/plug/fzf.vim
 source ~/.config/nvim/plug/vim-rspec.vim
 source ~/.config/nvim/plug/coc.vim

@@ -4,6 +4,7 @@ vim.cmd [[source ~/.config/nvim/old_init.vim]]
 require('settings')
 require('plugins')
 require('neo_tree_config')
+require('indent_blankline_config')
 -- require('neo-tree')
 
 vim.cmd([[
