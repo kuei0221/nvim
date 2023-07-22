@@ -18,3 +18,6 @@ vim.cmd([[
 vim.api.nvim_set_keymap('n', '<leader>gg', ':LazyGit<CR>', { noremap = true, silent = true })
 
 vim.cmd[[colorscheme dracula]]
+vim.cmd[[
+    autocmd WinEnter * setlocal foldmethod=expr
+]]

@@ -2,17 +2,6 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     use 'Mofiqul/dracula.nvim'
     use {
-        'folke/noice.nvim',
-        requires = {
-            -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
-            "MunifTanjim/nui.nvim",
-            -- OPTIONAL:
-            --   `nvim-notify` is only needed, if you want to use the notification view.
-            --   If not available, we use `mini` as the fallback
-            "rcarriga/nvim-notify",
-        }
-    }
-    use {
         "nvim-neo-tree/neo-tree.nvim",
         branch = "v3.x",
         requires = { 
@@ -38,5 +27,18 @@ return require('packer').startup(function(use)
             local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
             ts_update()
         end,
+    }
+
+    use {
+        'folke/noice.nvim',
+        requires = {
+            -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+            "MunifTanjim/nui.nvim",
+            -- OPTIONAL:
+            --   `nvim-notify` is only needed, if you want to use the notification view.
+            --   If not available, we use `mini` as the fallback
+            "rcarriga/nvim-notify",
+            'nvim-treesitter/nvim-treesitter',
+        }
     }
 end)
