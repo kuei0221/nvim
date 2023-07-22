@@ -63,7 +63,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-rails'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-dispatch'
 
 Plug 'dense-analysis/ale'
