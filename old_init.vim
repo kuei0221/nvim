@@ -74,6 +74,7 @@ let g:ale_fixers = {'ruby': ['rubocop']}
 " Set this variable to 1 to fix files when you save them.
 let g:ale_fix_on_save = 1
 let g:ale_ruby_rubocop_executable = 'bin/rubocop'
+let g:ale_echo_cursor = 0
 
 source ~/.config/nvim/plug/fzf.vim
 source ~/.config/nvim/plug/vim-rspec.vim

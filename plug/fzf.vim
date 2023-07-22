@@ -32,11 +32,11 @@ let g:fzf_action = {
       \ 'ctrl-t': 'tab drop',
       \ 'ctrl-x': 'split',
       \ 'ctrl-v': 'vsplit' }
-nnoremap <leader>p :GFiles --cached --others --exclude-standard<cr>
+nnoremap <silent> <leader>p :GFiles --cached --others --exclude-standard<cr>
 let s:ag_options = ' --ignore "tags" ' 
 let $FZF_DEFAULT_OPTS = '--bind ctrl-a:select-all,ctrl-d:deselect-all' 
 command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, s:ag_options, <bang>0)
 " command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, {'options': '--delimiter : --nth 4.. --group'}, <bang>0)
 
-nnoremap <leader>f :Ag<cr>
+nnoremap <silent> <leader>f :Ag<cr>
 
