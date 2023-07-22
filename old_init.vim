@@ -37,7 +37,6 @@ endif
 
 call plug#begin('~/.vim/plugged')
  " Plug Section
- Plug 'dracula/vim'
 
  " Adds file type icons to Vim plugins
  Plug 'ryanoasis/vim-devicons'
@@ -51,8 +50,6 @@ call plug#begin('~/.vim/plugged')
 
 " plugin on GitHub repo
 Plug 'tpope/vim-fugitive'
-" Git plugin not hosted on GitHub
-" Plug 'git://git.wincent.com/command-t.git'
 
 Plug 'vim-ruby/vim-ruby'
 let ruby_operators = 1
@@ -91,7 +88,6 @@ set statusline+=%{FugitiveStatusline()}
 nnoremap H gT
 nnoremap L gt
 let g:dracula_italic = 0
-colorscheme dracula
 
 " Quicker window movement
 nnoremap <C-j> <C-w>j
@@ -106,6 +102,3 @@ set complete+=kspell
 set diffopt+=vertical
 
 " set tags=./tags,./TAGS,tags;~,TAGS;~
-
-set foldmethod=syntax         
-set foldlevelstart=99

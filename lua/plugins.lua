@@ -1,6 +1,8 @@
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
+-- Using Packer:
+  use 'Mofiqul/dracula.nvim'
 
   use {
   "nvim-neo-tree/neo-tree.nvim",

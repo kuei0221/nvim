@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["dracula.nvim"] = {
+    loaded = true,
+    path = "/Users/michaelhwang/.local/share/nvim/site/pack/packer/start/dracula.nvim",
+    url = "https://github.com/Mofiqul/dracula.nvim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/Users/michaelhwang/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
