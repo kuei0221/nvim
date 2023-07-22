@@ -24,3 +24,5 @@ vim.cmd[[
 ]]
 
 require('trouble').setup()
+vim.keymap.set('n', '<c-n>', require('illuminate').goto_next_reference, { desc = "Move to next reference" })
+vim.keymap.set('n', '<c-p>', require('illuminate').goto_prev_reference, { desc = "Move to previous reference" })

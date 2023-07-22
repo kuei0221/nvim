@@ -138,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/michaelhwang/.local/share/nvim/site/pack/packer/start/trouble.nvim",
     url = "https://github.com/folke/trouble.nvim"
+  },
+  ["vim-illuminate"] = {
+    loaded = true,
+    path = "/Users/michaelhwang/.local/share/nvim/site/pack/packer/start/vim-illuminate",
+    url = "https://github.com/RRethy/vim-illuminate"
   }
 }
 
