@@ -133,6 +133,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/michaelhwang/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["trouble.nvim"] = {
+    loaded = true,
+    path = "/Users/michaelhwang/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
   }
 }
 

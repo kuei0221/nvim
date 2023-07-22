@@ -43,4 +43,6 @@ return require('packer').startup(function(use)
     }
 
     use 'RRethy/nvim-treesitter-endwise'
+    use 'folke/trouble.nvim'
 end)
+

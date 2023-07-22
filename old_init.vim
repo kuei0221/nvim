@@ -21,7 +21,7 @@ augroup numbertoggle
 augroup END
 
 set wildmode=longest,list   " get bash-like tab completions
-set cc=80                  " set an 80 column border for good coding style
+set cc=120                  " set an 80 column border for good coding styl
 filetype plugin indent on   "allow auto-indenting depending on file type
 syntax on                   " syntax highlighting
 set mouse=a                 " enable mouse click
@@ -37,16 +37,6 @@ endif
 
 call plug#begin('~/.vim/plugged')
  " Plug Section
-
- " Adds file type icons to Vim plugins
- Plug 'ryanoasis/vim-devicons'
- " Plug 'SirVer/ultisnips'
- " Plug 'honza/vim-snippets'
-" let g:UltiSnipsExpandTrigger="<tab>"
-" let g:UltiSnipsJumpForwardTrigger="<c-b>"
-" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
- " Plug 'mhinz/vim-startify'
 
 " plugin on GitHub repo
 Plug 'tpope/vim-fugitive'
@@ -74,7 +64,9 @@ let g:ale_fixers = {'ruby': ['rubocop']}
 " Set this variable to 1 to fix files when you save them.
 let g:ale_fix_on_save = 1
 let g:ale_ruby_rubocop_executable = 'bin/rubocop'
-let g:ale_echo_cursor = 0
+let g:ale_use_neovim_diagnostics_api = 1
+let g:ale_echo_delay = 1000
+
 
 source ~/.config/nvim/plug/fzf.vim
 source ~/.config/nvim/plug/vim-rspec.vim
@@ -100,5 +92,3 @@ set complete+=kspell
 
 " Always use vertical diffs
 set diffopt+=vertical
-
-" set tags=./tags,./TAGS,tags;~,TAGS;~

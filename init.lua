@@ -22,3 +22,5 @@ vim.cmd[[colorscheme dracula]]
 vim.cmd[[
     autocmd WinEnter * setlocal foldmethod=expr
 ]]
+
+require('trouble').setup()
