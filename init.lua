@@ -5,7 +5,7 @@ require('settings')
 require('plugins')
 require('neo_tree_config')
 require('indent_blankline_config')
--- require('neo-tree')
+require('nvim_treesitter_config')
 
 vim.cmd([[
   augroup packer_user_config
@@ -14,6 +14,5 @@ vim.cmd([[
   augroup end
 ]])
 
--- vim.cmd([[nnoremap \ :Neotree reveal<cr>]])
 --
 vim.api.nvim_set_keymap('n', '<leader>gg', ':LazyGit<CR>', { noremap = true, silent = true })
