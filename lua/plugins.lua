@@ -1,4 +1,19 @@
 return require('packer').startup(function(use)
+    use {
+      "zbirenbaum/copilot.lua",
+      cmd = "Copilot",
+      event = "InsertEnter",
+      config = function()
+          require("copilot").setup({
+              suggestion = {
+                  auto_trigger = true,
+                  keymap = {
+                      accept = "<C-l>"
+                  }
+              }
+          })
+      end,
+    }
     use 'wbthomason/packer.nvim'
     use 'Mofiqul/dracula.nvim'
     use {
