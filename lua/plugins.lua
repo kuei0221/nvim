@@ -1,4 +1,5 @@
 return require('packer').startup(function(use)
+    use 'neovim/nvim-lspconfig'
     use {
       "zbirenbaum/copilot.lua",
       cmd = "Copilot",

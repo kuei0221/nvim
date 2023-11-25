@@ -113,6 +113,11 @@ _G.packer_plugins = {
     path = "/Users/michaelhwang/.local/share/nvim/site/pack/packer/start/nui.nvim",
     url = "https://github.com/MunifTanjim/nui.nvim"
   },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/Users/michaelhwang/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
+  },
   ["nvim-notify"] = {
     loaded = true,
     path = "/Users/michaelhwang/.local/share/nvim/site/pack/packer/start/nvim-notify",
