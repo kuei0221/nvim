@@ -64,6 +64,7 @@ let g:ale_fixers = {'ruby': ['rubocop']}
 " Set this variable to 1 to fix files when you save them.
 let g:ale_fix_on_save = 1
 let g:ale_ruby_rubocop_executable = 'bin/rubocop'
+let g:ale_ruby_rubocop_auto_correct_all = 1
 let g:ale_use_neovim_diagnostics_api = 1
 let g:ale_echo_delay = 1000
 
