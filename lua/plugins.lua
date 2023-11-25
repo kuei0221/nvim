@@ -1,5 +1,8 @@
 return require('packer').startup(function(use)
     use 'neovim/nvim-lspconfig'
+    use 'hrsh7th/nvim-cmp'
+    use 'hrsh7th/cmp-nvim-lsp'
+
     use {
       "zbirenbaum/copilot.lua",
       cmd = "Copilot",
@@ -7,14 +10,22 @@ return require('packer').startup(function(use)
       config = function()
           require("copilot").setup({
               suggestion = {
-                  auto_trigger = true,
-                  keymap = {
-                      accept = "<C-l>"
-                  }
+                  enabled = false
+              },
+              panel = {
+                  enabled = false
               }
           })
       end,
     }
+    use {
+      "zbirenbaum/copilot-cmp",
+      after = { "copilot.lua" },
+      config = function ()
+        require("copilot_cmp").setup()
+      end
+    }
+
     use 'wbthomason/packer.nvim'
     use 'Mofiqul/dracula.nvim'
     use {

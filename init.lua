@@ -9,6 +9,7 @@ require('nvim_treesitter_config')
 require('noice_config')
 require('nvim_treesitter_endwise_config')
 require('lspconfig_config')
+require('nvim_cmp_config')
 
 vim.cmd([[
   augroup packer_user_config
@@ -27,3 +28,9 @@ vim.cmd[[
 require('trouble').setup()
 vim.keymap.set('n', '<c-n>', require('illuminate').goto_next_reference, { desc = "Move to next reference" })
 vim.keymap.set('n', '<c-p>', require('illuminate').goto_prev_reference, { desc = "Move to previous reference" })
+
+-- Set up nvim-cmp  -- Set up lspconfig.
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+require('lspconfig')['solargraph'].setup {
+    capabilities = capabilities
+}
