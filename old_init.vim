@@ -71,8 +71,8 @@ let g:ale_echo_delay = 1000
 
 source ~/.config/nvim/plug/fzf.vim
 source ~/.config/nvim/plug/vim-rspec.vim
-source ~/.config/nvim/plug/coc.vim
 source ~/.config/nvim/plug/vim-airline.vim
+
 call plug#end()
 
 set smartcase
